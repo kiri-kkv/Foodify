@@ -1,0 +1,61 @@
+.picture {
+  width: 100%;
+  background-image: linear-gradient(
+      to right bottom,
+      var(--color-grey-light),
+      var(--color-grey-light-1)
+    ),
+    url(../../assets/meals.jpg);
+  background-size: cover;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.mainHeading {
+  margin-bottom: 1.5rem;
+  transition: all 0.4s;
+  animation: moveInLeft 0.8s ease-out;
+}
+.secondaryHeading {
+  animation: moveInRight 0.8s ease-out;
+}
+.heading__secondary {
+  color: var(--color-header);
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

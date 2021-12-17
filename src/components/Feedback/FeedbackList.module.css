@@ -1,0 +1,79 @@
+.people__story {
+  padding: 4rem;
+  background-color: rgba(255, 255, 255, 60%);
+  margin: 0 auto;
+  margin-top: 5rem;
+  transform: skewX(-12deg);
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.6);
+  width: 90%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .people__story {
+    transform: skewX(0);
+    width: 100%;
+  }
+}
+
+.people__info {
+  height: 15rem;
+  width: 15rem;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transform: translateX(-2rem) skewX(12.1deg);
+  float: left;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .people__info {
+    transform: translateX(-2rem) skewX(0);
+  }
+}
+
+.people__info img {
+  height: 100%;
+  display: inline-block;
+}
+
+.people__info figcaption {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  backface-visibility: hidden;
+  text-align: center;
+  transition: all 0.5s;
+  font-size: 1.5rem;
+}
+.people__story:hover .people__info figcaption {
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.people__story:hover .people__info img {
+  filter: blur(3px) brightness(80%);
+}
+
+.people__comment {
+  transform: skewX(12deg);
+}
+@media only screen and (max-width: 56.25em) {
+  .people__comment {
+    transform: skewX(0);
+  }
+}
+
+.people__comment h3 {
+  font-size: 1.7rem;
+  color: var(--color-header);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.people__comment p {
+  font-size: 1.2rem;
+  text-align: justify;
+}

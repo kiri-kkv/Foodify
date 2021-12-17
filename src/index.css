@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --color-grey-light: rgba(255, 255, 255, 0.808);
+  --color-grey-light-1: #d3d3d38c;
+  --color-header: rgb(161, 38, 38);
+  --color-header-light: rgb(209, 151, 151);
+  --color-link: rgba(255, 255, 255, 0.657);
+  --color-link-active-background: #000;
+  --color-food-card: #f9f7f6ce;
+  --color-food-name: #040b14;
+  --color-footer: #333;
+  --color-card: #fff;
+  --color-aboutus: rgba(149, 141, 141, 0.178);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 3rem;
+  background-color: var(--color-grey-light);
+}
+@media only screen and (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
+
+::selection {
+  color: var(--color-header);
 }

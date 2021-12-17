@@ -1,0 +1,7 @@
+.heading-primary {
+  font-size: 8rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  text-align: center;
+  color: var(--color-header);
+}

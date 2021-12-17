@@ -1,0 +1,68 @@
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  border-radius: 2.5rem;
+  border-style: none;
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  animation: popup 0.4 ease-out;
+  transition: all 0.2s;
+}
+
+.btn__icon {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--color-link);
+  margin-right: 1rem;
+}
+
+.btn__text {
+  font-size: 1.2rem;
+  font-weight: 1000;
+  text-transform: uppercase;
+  color: var(--color-link);
+  margin-right: 1rem;
+}
+
+.btn__total {
+  background-color: rgb(165, 42, 42, 0.5);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  position: relative;
+}
+
+.btn__total span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-header);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn:active {
+  transform: translateY(0);
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  80% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

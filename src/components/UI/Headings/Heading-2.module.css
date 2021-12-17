@@ -1,0 +1,7 @@
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 1200;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  color: var(--color-header);
+}

@@ -1,0 +1,32 @@
+.heading {
+  background-color: var(--color-aboutus);
+}
+
+.aboutus {
+  background-color: var(--color-aboutus);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2rem;
+  padding: 4rem 10rem;
+}
+
+.aboutus__card {
+  background-color: #fff;
+  padding: 3rem;
+  display: grid;
+  grid-row-gap: 0.5rem;
+  justify-items: center;
+}
+.aboutus__icon {
+  height: 8rem;
+  width: 8rem;
+  margin-bottom: 2rem;
+  fill: var(--color-header);
+}
+.aboutus__card h3 {
+  font-size: 1.5rem;
+}
+.aboutus__card p {
+  font-size: 1.3rem;
+  text-align: center;
+}
